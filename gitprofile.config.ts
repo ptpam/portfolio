@@ -1,5 +1,4 @@
 // gitprofile.config.ts
-
 const CONFIG = {
   github: {
     username: 'ptpam', // Your GitHub org/user name. (This is the only required config)
@@ -16,8 +15,8 @@ const CONFIG = {
       header: 'Github Projects',
       mode: 'manual', // Mode can be: 'automatic' or 'manual'
       automatic: {
-        sortBy: 'stars', // Sort projects by 'stars' or 'updated'
-        limit: 8, // How many projects to display.
+        sortBy: 'updated', // Sort projects by 'stars' or 'updated'
+        limit: 6, // How many projects to display.
         exclude: {
           forks: false, // Forked projects will not be displayed if set to true.
           projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
@@ -25,7 +24,7 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['ptpam/circleci-github-actions', 'ptpam/CppND-Capstone-Snake-Game', 'ptpam/leetcode', 'ptpam/kubernetes-flask-mysql'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: ['ptpam/circleci-github-actions', 'ptpam/leetcode', 'ptpam/CppND-Capstone-Snake-Game', 'ptpam/kubernetes-flask-mysql'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
@@ -33,20 +32,80 @@ const CONFIG = {
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'Project Name',
+          title: 'Smart Cabin Monitoring System',
+          id: 1,
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'An innovative project focused on deploying a monitoring system for vehicles using edge devices',
+          details: ' "Smart Cabin Monitoring System" is a sophisticated project aimed at deploying a comprehensive monitoring system for cabins using edge devices. The project encompasses various stages, starting from model development to deployment, with a focus on optimization and integration.\
+          <br>\
+          <br>\
+          <strong>Model Development:</strong> The project involved initial model development, including problem description, data collection, and ensuring the success of the models across various test cases. This phase required meticulous attention to detail to achieve high accuracy levels.\
+          <br>\
+          <strong>Integration of Several Models:</strong> Multiple models were integrated into the system, necessitating optimization due to limited resources. The integration process focused on ensuring the performance of the models in terms of accuracy while utilizing multithreading for enhanced efficiency.\
+          <br>\
+          <strong>Edge-Device Deployment:</strong> Special emphasis was placed on deploying the monitoring system on edge devices. This involved model conversion, integration, and implementation of multithreading to enhance performance in resource-constrained environments.\
+          <br>\
+          <strong>Collaboration and Integration:</strong> Close collaboration with cross-functional teams was crucial for integrating system logic seamlessly. This ensured an efficient end-to-end solution, meeting the project\'s objectives effectively.\
+          <br>\
+          <strong>Docker-Based Automation:</strong> Docker-based automation was implemented to streamline the integration of in-cabin monitoring system components. This optimized development workflows and ensured consistent deployment across different environments, enhancing scalability and reliability.',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'scms.webp',
+          link: 'https://ptpam.github.io/portfolio/project/1',
         },
         {
-          title: 'Project Name',
+          title: 'Cloud Image Classifier',
+          id: 2,
+          details: '<strong>Cloud Image Classifier:</strong> Cloud Image Classifier is a comprehensive project that integrates various technologies to provide an intuitive image classification service. The system is built using Docker for containerization, Flask for web framework, and AWS for deployment.<br>\
+          The primary functionality of the project involves users uploading images through a web interface. Once an image is uploaded, it is sent to the backend, where the classification model processes it.<br>\
+          The classification model could be based on deep learning, machine learning, or any other suitable technique depending on the project requirements.<br>\
+          The Docker containerization ensures portability and consistency across different environments. Flask, a lightweight and efficient web framework, handles the communication between the user interface and the backend processing. AWS is utilized for deployment, offering scalability, reliability, and ease of management.<br>\
+          AWS services like EC2 for hosting the application, S3 for storing uploaded images, and possibly SageMaker for running machine learning models can be integrated into the project. Upon processing, the classification results are sent back to the user\'s web browser, where they can view the outcome of the image classification task. The web interface is designed to be user-friendly and straightforward, making it accessible to users with varying levels of technical expertise.<br>\
+          Overall, "Cloud Image Classifier" showcases proficiency in containerization, web development, cloud computing, and machine learning, making it an impressive addition to any portfolio demonstrating a diverse skill set and practical application of modern technologies.<br>',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'A Dockerized Flask application deployed on AWS, offering image classification',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'cloud.webp',
+          link: 'https://ptpam.github.io/portfolio/project/2',
+        },
+        {
+          title: 'CircleCI-Docker Tutorial Repository',
+          id: 3,
+          details: '<p>\
+          This repository serves as a beginner-friendly guide for learning Continuous Integration/Continuous Deployment (CI/CD) using CircleCI and Docker. It provides a hands-on approach to understanding CI/CD principles and containerization concepts through a simple Flask web application.\
+          Whether you\'re new to CI/CD or looking to deepen your understanding, this repository offers a step-by-step tutorial on setting up CI/CD pipelines, integrating Docker containers, and deploying applications with CircleCI.\
+          </p>\
+          <p>\
+          By following the instructions and exploring the provided resources, you can gain practical experience and confidence in utilizing CI/CD workflows for your projects. Contributions are welcome, as this repository aims to be a collaborative learning resource for the community.\
+          </p>\
+          <div style="text-align: center;">\
+          <a href="https://github.com/ptpam/circleci-github-actions" target="_blank" style="background-color: #008CBA; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; border-radius: 5px; border: none; transition: background-color 0.3s ease;">Visit Repository</a>\
+          </div>',
+          description:
+            'A beginner-friendly guide for learning Continuous Integration/Continuous Deployment (CI/CD) using CircleCI and Docker',
+          imageUrl:
+            'circleci.webp',
+          link: 'https://ptpam.github.io/portfolio/project/3',
+        },
+        {
+          title: 'CPPND: Capstone Snake Game Example',
+          id: 4,
+          details: '<p>\
+          Welcome to the Capstone Snake Game Example repository! This project showcases the culmination of my journey through the Udacity C++ Nanodegree Program. Here, you\'ll find an enhanced version of the classic Snake game, infused with modern C++ features and best practices.\
+      </p>\
+      <p>\
+          The aim of this project is to demonstrate my proficiency in C++ programming and software development principles. By meticulously crafting clean and efficient code, I\'ve transformed the traditional Snake game into a polished application, ready to be added to my portfolio and shared with potential employers and colleagues.\
+      </p>\
+      <p>\
+          Through this repository, I invite you to explore the enhancements made to the game, from improved loops and functions to advanced object-oriented design and memory management techniques. Dive into the code, run the game, and witness firsthand the evolution of a simple game into a sophisticated application that highlights my skills and dedication to the craft of software development.\
+      </p>\
+      <div style="text-align: center;">\
+          <a href="https://github.com/ptpam/CppND-Capstone-Snake-Game" target="_blank" style="background-color: #008CBA; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; border-radius: 5px; border: none; transition: background-color 0.3s ease;">Visit Repository</a>\
+      </div>',
+          description:
+            'A foundation for building and extending a Snake game using C++',
+          imageUrl:
+            'cpp.webp',
+          link: 'https://ptpam.github.io/portfolio/project/4',
         },
       ],
     },

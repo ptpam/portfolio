@@ -75,7 +75,7 @@ const GitProfile = ({ config }: { config: Config }) => {
         const repos = sanitizedConfig.projects.github.manual.projects
           .map((project) => `+repo:${project}`)
           .join('');
-
+        
         const url = `https://api.github.com/search/repositories?q=${repos}&type=Repositories`;
 
         const repoResponse = await axios.get(url, {
@@ -256,12 +256,6 @@ const GitProfile = ({ config }: { config: Config }) => {
                         googleAnalyticsId={sanitizedConfig.googleAnalytics.id}
                       />
                     )}
-                    {sanitizedConfig.publications.length !== 0 && (
-                      <PublicationCard
-                        loading={loading}
-                        publications={sanitizedConfig.publications}
-                      />
-                    )}
                     {sanitizedConfig.projects.external.projects.length !==
                       0 && (
                       <ExternalProjectCard
@@ -271,6 +265,12 @@ const GitProfile = ({ config }: { config: Config }) => {
                           sanitizedConfig.projects.external.projects
                         }
                         googleAnalyticId={sanitizedConfig.googleAnalytics.id}
+                      />
+                    )}
+                    {sanitizedConfig.publications.length !== 0 && (
+                      <PublicationCard
+                        loading={loading}
+                        publications={sanitizedConfig.publications}
                       />
                     )}
                     {sanitizedConfig.blog.display && (

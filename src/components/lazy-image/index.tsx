@@ -11,7 +11,7 @@ import { useState, Fragment, useEffect } from 'react';
  * @returns {ReactElement} The LazyImage component.
  */
 const LazyImage: React.FC<{
-  placeholder: React.ReactElement;
+  placeholder?: React.ReactElement;
   src: string;
   alt: string;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any

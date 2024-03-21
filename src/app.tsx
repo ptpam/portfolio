@@ -7,8 +7,8 @@ const MainContent = () => {
   const { route } = useRoute();
   
   // Determine the content based on the route
-  if (route.startsWith('/portfolio/project/')) {
-    const projectId = parseInt(route.split('/portfolio/project/')[1], 10);
+  if (route.startsWith('https://ptpam.github.io/portfolio/project/')) {
+    const projectId = parseInt(route.split('https://ptpam.github.io/portfolio/project/')[1], 10);
     return <ProjectPage projectId={projectId} /> 
   }
 

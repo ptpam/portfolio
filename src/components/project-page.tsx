@@ -2,7 +2,7 @@ import React from 'react';
 import LazyImage from './lazy-image'; // Assuming you have this component for lazy loading images
 
 interface ProjectPageProps {
-  projectId: string;
+  projectId: number;
 }
 
 const ProjectPage: React.FC<ProjectPageProps> = ({ projectId }) => {

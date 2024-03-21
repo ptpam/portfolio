@@ -5,7 +5,7 @@ import ProjectPage from './components/project-page.tsx';
 
 const MainContent = () => {
   const { route } = useRoute();
-  
+  console.log(route)
   // Determine the content based on the route
   if (route.startsWith('https://ptpam.github.io/portfolio/project/')) {
     const projectId = parseInt(route.split('https://ptpam.github.io/portfolio/project/')[1], 10);

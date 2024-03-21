@@ -7,7 +7,11 @@ const RoutingContext = React.createContext({
 
 export const useRoute = () => useContext(RoutingContext);
 
-export const RoutingProvider: React.FC = ({ children }) => {
+interface RoutingProviderProps {
+  children: React.ReactNode;
+}
+
+export const RoutingProvider: React.FC<RoutingProviderProps> = ({ children }) => {
   const [route, setRoute] = useState(window.location.pathname);
 
   useEffect(() => {
@@ -18,9 +22,7 @@ export const RoutingProvider: React.FC = ({ children }) => {
     // Listen to 'popstate' event for back/forward navigation
     window.addEventListener('popstate', handleLocationChange);
 
-    // Optional: If you're manually changing the URL (e.g., via pushState),
-    // you might also need to listen to some custom event or trigger updates in another way.
-
+    // Cleanup the event listener when the component unmounts
     return () => {
       window.removeEventListener('popstate', handleLocationChange);
     };

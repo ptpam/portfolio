@@ -114,6 +114,9 @@ const ExternalProjectCard = ({
                   <p className="mt-2 text-base-content text-opacity-60 text-sm text-justify">
                     {item.description}
                   </p>
+                  {item.details && (
+                    <p dangerouslySetInnerHTML={{ __html: item.details }} />
+                  )}
                 </div>
               </div>
             </div>

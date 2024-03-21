@@ -13,11 +13,10 @@ const MainContent = () => {
   // Determine the content based on the presence of project ID
   if (projectId !== null) {
     return <ProjectPage projectId={projectId} /> ;
-  }
-
-
+  }else{
   // Default to showing the GitProfile
-  return <GitProfile config={CONFIG} />;
+    return <GitProfile config={CONFIG} />;
+  }
 };
 
 const App = () => {

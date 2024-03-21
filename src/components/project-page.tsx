@@ -36,9 +36,6 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ projectId }) => {
   }else{
       return <div>Project not found</div>;
   }
-  
-
-
 };
 
 export default ProjectPage;

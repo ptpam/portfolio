@@ -25,7 +25,7 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['ptpam/circleci-github-actions', 'ptpam/CppND-Capstone-Snake-Game', 'ptpam/leetcode'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: ['ptpam/circleci-github-actions', 'ptpam/CppND-Capstone-Snake-Game', 'ptpam/leetcode', 'ptpam/kubernetes-flask-mysql'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
@@ -125,10 +125,40 @@ const CONFIG = {
   ],
   certifications: [
     {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
+      name: 'Introduction to Machine Learning with PyTorch',
+      body: 'Udacity',
+      year: '',
+      link: 'https://confirm.udacity.com/FU4QEGRS',
+    },
+    {
+      name: 'C++',
+      body: 'Udacity',
+      year: '',
+      link: 'https://confirm.udacity.com/e/72dcc0e0-524a-11ee-ab36-9fd0fc04ec9f',
+    },
+    {
+      name: 'AI Programming with Python',
+      body: 'Udacity',
+      year: '',
+      link: 'https://confirm.udacity.com/GYGDJ3PM',
+    },
+    {
+      name: 'Small Datasets in Machine Learning',
+      body: 'Udacity',
+      year: '',
+      link: 'https://confirm.udacity.com/e/b4b00b48-bed5-11ed-ac01-9f947bcffe14',
+    },
+    {
+      name: '한국어능력시험(TOPIK)',
+      body: '5 급',
+      year: '',
+      link: '',
+    },
+    {
+      name: 'TOEFL(IBT)',
+      body: '91',
+      year: '',
+      link: '',
     },
   ],
   educations: [

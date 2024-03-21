@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 
 const RoutingContext = React.createContext({
   route: '',
-  setRoute: (route: string) => {},
+  setRoute: (_route: string) => {},
 });
 
 export const useRoute = () => useContext(RoutingContext);

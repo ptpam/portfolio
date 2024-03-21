@@ -9,6 +9,7 @@ const MainContent = () => {
   // Determine the content based on the route
   if (route.startsWith('/portfolio/project/')) {
     const projectId = parseInt(route.split('/portfolio/project/')[1], 10);
+    console.log(projectId)
     return <ProjectPage projectId={projectId} /> 
   }
 

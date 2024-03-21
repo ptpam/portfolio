@@ -50,7 +50,7 @@ const CONFIG = {
           <strong>Docker-Based Automation:</strong> Docker-based automation was implemented to streamline the integration of in-cabin monitoring system components. This optimized development workflows and ensured consistent deployment across different environments, enhancing scalability and reliability.',
           imageUrl:
             'scms.webp',
-          link: 'https://ptpam.github.io/portfolio/project/1',
+          link: '/portfolio/project/1',
         },
         {
           title: 'Cloud Image Classifier',
@@ -65,7 +65,7 @@ const CONFIG = {
             'A Dockerized Flask application deployed on AWS, offering image classification',
           imageUrl:
             'cloud.webp',
-          link: 'https://ptpam.github.io/portfolio/project/2',
+          link: '/portfolio/project/2',
         },
         {
           title: 'CircleCI-Docker Tutorial Repository',
@@ -84,7 +84,7 @@ const CONFIG = {
             'A beginner-friendly guide for learning Continuous Integration/Continuous Deployment (CI/CD) using CircleCI and Docker',
           imageUrl:
             'circleci.webp',
-          link: 'https://ptpam.github.io/portfolio/project/3',
+          link: '/portfolio/project/3',
         },
         {
           title: 'CPPND: Capstone Snake Game Example',
@@ -105,7 +105,7 @@ const CONFIG = {
             'A foundation for building and extending a Snake game using C++',
           imageUrl:
             'cpp.webp',
-          link: 'https://ptpam.github.io/portfolio/project/4',
+          link: '/portfolio/project/4',
         },
       ],
     },
@@ -163,7 +163,7 @@ const CONFIG = {
     {
       company: 'DeltaX',
       position: 'AI Researcher',
-      from: 'September 2021',
+      from: 'September 2022',
       to: 'March 2024',
       companyLink: 'http://deltax.ai/',
     },

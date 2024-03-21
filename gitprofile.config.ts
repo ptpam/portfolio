@@ -97,10 +97,10 @@ const CONFIG = {
   ],
   experiences: [
     {
-      company: 'Company Name',
+      company: 'Delta X',
       position: 'Position',
       from: 'September 2021',
-      to: 'Present',
+      to: 'March 2024',
       companyLink: 'https://example.com',
     },
     {

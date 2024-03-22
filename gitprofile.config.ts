@@ -76,10 +76,10 @@ const CONFIG = {
           </p>\
           <p>\
           By following the instructions and exploring the provided resources, you can gain practical experience and confidence in utilizing CI/CD workflows for your projects. Contributions are welcome, as this repository aims to be a collaborative learning resource for the community.\
-          </p>\
-          <div style="text-align: center;">\
-          <a href="https://github.com/ptpam/circleci-github-actions" target="_blank" style="background-color: #008CBA; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; border-radius: 5px; border: none; transition: background-color 0.3s ease;">Visit Repository</a>\
-          </div>',
+          </p>',
+          // <div style="text-align: center;">\
+          //<a href="https://github.com/ptpam/circleci-github-actions" target="_blank" style="background-color: #008CBA; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; border-radius: 5px; border: none; transition: background-color 0.3s ease;">Visit Repository</a>\
+          //</div>
           description:
             'A beginner-friendly guide for learning Continuous Integration/Continuous Deployment (CI/CD) using CircleCI and Docker',
           imageUrl:
@@ -97,10 +97,10 @@ const CONFIG = {
       </p>\
       <p>\
           Through this repository, I invite you to explore the enhancements made to the game, from improved loops and functions to advanced object-oriented design and memory management techniques. Dive into the code, run the game, and witness firsthand the evolution of a simple game into a sophisticated application that highlights my skills and dedication to the craft of software development.\
-      </p>\
-      <div style="text-align: center;">\
-          <a href="https://github.com/ptpam/CppND-Capstone-Snake-Game" target="_blank" style="background-color: #008CBA; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; border-radius: 5px; border: none; transition: background-color 0.3s ease;">Visit Repository</a>\
-      </div>',
+      </p>',
+      //<div style="text-align: center;">\
+      //<a href="https://github.com/ptpam/CppND-Capstone-Snake-Game" target="_blank" style="background-color: #008CBA; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; border-radius: 5px; border: none; transition: background-color 0.3s ease;">Visit Repository</a>\
+      //</div>
           description:
             'A foundation for building and extending a Snake game using C++',
           imageUrl:
